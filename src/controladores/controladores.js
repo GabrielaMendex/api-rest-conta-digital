@@ -53,7 +53,6 @@ const criarContaBancaria = (req, res) => {
             senha
         }
     }
-
     contas.push(novaConta);
     return res.status(201).send();
 }
@@ -180,7 +179,6 @@ const transferirValor = (req, res) => {
     if (!numeroContaOrigem || !numeroContaDestino) {
         return res.status(400).json({ mensagem: 'Conta de origem ou destino não encontradas.' });
     }
-
 
     if (!senhaUsuarioEstaValida(senha, numeroContaOrigem.usuario.senha)) {
         return res.status(401).json({ mensagem: "A senha informada é inválida para este usuário!" });
