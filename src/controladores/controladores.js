@@ -29,6 +29,7 @@ const listarContasBancarias = (req, res) => {
     res.status(200).send(resultado);
 }
 
+
 const criarContaBancaria = (req, res) => {
     const { nome, cpf, data_nascimento, telefone, email, senha } = req.body;
 
@@ -58,7 +59,6 @@ const criarContaBancaria = (req, res) => {
 }
 
 
-
 const atualizarDadosUsuario = (req, res) => {
     const { nome, cpf, data_nascimento, telefone, email, senha } = req.body;
     const { numeroConta } = req.params;
@@ -85,6 +85,7 @@ const atualizarDadosUsuario = (req, res) => {
 
     return res.status(204).send();
 }
+
 
 const excluirContaBancaria = (req, res) => {
     const { numeroConta } = req.params;
@@ -162,6 +163,7 @@ const saqueValor = (req, res) => {
     return res.status(204).send();
 }
 
+
 const transferirValor = (req, res) => {
     const { numero_conta_origem, numero_conta_destino, valor, senha } = req.body;
 
@@ -204,6 +206,7 @@ const transferirValor = (req, res) => {
     return res.status(204).send();
 }
 
+
 const exibirSaldoConta = (req, res) => {
     const { numero_conta, senha } = req.query;
 
@@ -220,6 +223,7 @@ const exibirSaldoConta = (req, res) => {
 
     res.status(200).json({ saldo: numeroContaEncontrado.saldo });
 }
+
 
 const listarTransacoesRealizadas = (req, res) => {
     const { numero_conta, senha } = req.query;
