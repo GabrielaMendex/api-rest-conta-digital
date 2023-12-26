@@ -1,6 +1,6 @@
 # API de Banco Digital
 
-Bem-vindo à API de Banco Digital. Esta API é um projeto piloto para um banco digital, projetado com a versatilidade em mente para futuras expansões. Os dados essenciais do banco, como nome e agência, validações de senhas e operações trandicionais.
+Bem-vindo à API de Banco Digital. Esta API é um projeto piloto para um banco digital, projetado com a versatilidade em mente para futuras expansões. Os dados essenciais do banco, como nome e agência, validações de senhas e operações tradicionais.
 
 ## :credit_card: Principais Funcionalidades  
 A API oferece um conjunto completo de funcionalidades para contas bancárias, permitindo que você gerencie as operações de forma conveniente e eficaz. Aqui estão os principais recursos:
